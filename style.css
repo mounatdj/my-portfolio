@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #030608, #112627, #32467e);
+  color: #eaeaea;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  display: flex;
+  gap: 60px;
+  max-width: 1000px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.main-title {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.main-title span {
+  background: linear-gradient(90deg, #ffffff, #a5c9ff, #ffffff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+li {
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+li:hover {
+  transform: translateX(5px);
+}
+.github {
+  text-decoration: none;
+  color: #5e777c;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.github:hover {
+  color: #7385aa;
+  text-shadow: 0 0 8px rgba(115, 133, 170, 0.7);
+}
